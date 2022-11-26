@@ -1,4 +1,20 @@
 /*--------------Formulario de contato--------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(158, 153, 153) 50%, rgb(59, 57, 57) 50%);
+
+}
 form{
     width: 350px;
     border-radius: 5px;
@@ -9,16 +25,11 @@ form{
     
   }
   form h5{
-    font-size: 22px;
-    color:#080704;
-    margin-bottom: 20px;
-    height: 10px;
-    
+    font-size: 30px;
+    color:#ffb703;
+    margin-left: auto;
+    margin-right: auto;
   }
-  form h5:hover{
-  color: #ffb703;
-  }
-  
   form .area-input{
     display: flex;
     align-items: center;
@@ -27,6 +38,7 @@ form{
     position: relative;
     height: 35px;
     margin-top: 40px;
+
   }
   form .area-input label{
     position: absolute;
@@ -35,6 +47,7 @@ form{
     font-size:12px;
     color: #444;
     transform: translateY(-90%);
+
   }
   form .msg-input textarea{
     width: 100%;
@@ -44,6 +57,8 @@ form{
     outline: none;
     font-size: 16px;
     overflow: hidden;
+    resize: vertical;
+
   }
   form .area-input input{
     width: 100%;
@@ -58,13 +73,13 @@ form{
   
   }
   form button{
-    font-family: "Montserrat", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     width: 100%;
     height: 44px;
     background-color: #ffb703;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .5px;
     border: none;
     cursor: pointer;
@@ -73,44 +88,56 @@ form{
   
   }
   form button:hover{
-   background: #E3A507;
+   background: #535351;
    border-radius: 15px;
    -webkit-transform: scale(.9);
    -ms-transform: scale(.9);
    transform: scale(.9);
+
   }
   form h6{
-    font-size: 12px;
+    font-size: 14px;
+
   }
   form input::placeholder {
     font-size: 14px;
+
   }
   form textarea::placeholder {
     font-size: 16px;
+
   }
   form input:focus::-webkit-input-placeholder {
     color: transparent;
+
   }
   form input:focus:-moz-placeholder { /* Firefox 18- */
-    color: transparent;  
+    color: transparent; 
+
   }
   form input:focus::-moz-placeholder {  /* Firefox 19+ */
     color: transparent;  
+
   }
   form input:focus:-ms-input-placeholder {  
-    color: transparent;  
+    color: transparent;
+
   }
   form textarea:focus::-webkit-input-placeholder {
     color: transparent;
+
   }
   form input:hover::placeholder
+
   {
     -webkit-transform: translateX(3px);
     transform: translateX(3px);
           
   }
   form textarea:hover::placeholder
+
   {
     -webkit-transform: translateX(3px);
     transform: translateX(3px);
+
   }
